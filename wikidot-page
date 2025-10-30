@@ -1,0 +1,1558 @@
+[[iftags +版式]]
+[[module ThemePreviewer noUi="true" theme_url="https://github.backroomswiki.cn/Super_Liminal/css/basic-styles.css"]]
+[[module CSS]]
+@import url(https://github.backroomswiki.cn/Super_Liminal/css/super-liminal.css);
+[[/module]]
+[[module CSS]]
+:root {
+    --text-color: 35, 35, 38;
+    --background-color: 252, 252, 252;
+    --light-color-2: 240, 240, 244;
+    --dark-color-2: 229, 229, 238;
+    --dark-color-3: 50, 50, 51;
+    --dark-color-4: var(--dark-color-3);
+    --general-light-background-color: var(--light-color-2);
+    --general-light-text-color: var(--text-color);
+    --general-medium-background-color: var(--dark-color-2);
+    --general-medium-text-color: var(--text-color);
+    --general-dark-background-color: var(--dark-color-3);
+    --general-dark-text-color: var(--light-color-1);
+    --header-background-bottom: var(--light-color-2);
+    --header-background-top: var(--light-color-2), 0.8;
+    --header-extra-background-image: none;
+    --logo-image: url(https://github.backroomswiki.cn/Super_Liminal/images/black_logo.svg);
+    --header-text-color: var(--dark-color-3);
+    --header-text-shadow-color: 0, 0, 0, 0;
+    --topbar-text-color: var(--dark-color-3);
+    --topbar-hover-text-color: var(--light-color-2);
+    --header-username-color: var(--dark-color-3);
+    --account-button-text-color: var(--light-color-2);
+    --account-button-hover-text-color: var(--text-color);
+    --account-button-background-color: var(--dark-color-3);
+    --account-drop-hover-background-color: var(--light-color-1);
+    --page-title-border-color: var(--dark-color-2);
+    --sidebar-title-background-color: var(--dark-color-2);
+    --sidebar-title-text-color: var(--dark-color-3);
+    --sidebar-title-shadow-color: 0, 0, 0, 0;
+    --sidebar-media-background-color: var(--light-color-2);
+    --sidebar-hover-background-color: var(--light-color-2);
+    --hr-color: var(--dark-color-2);
+    --popup-loading-color: var(--dark-color-3);
+    --scrollbar-color: var(--dark-color-3);
+    --scrollbar-background-color: var(--light-color-2);
+    --page-option-background-color: var(--light-color-2);
+
+}
+#header {
+    box-shadow:
+        0px 0px 8.5px -1px rgba(var(--general-shadow-color), 0.42),
+        0px 0px 68px -21px rgba(var(--general-shadow-color), 0.1)
+}
+#header h2 span::before {
+    opacity: 0.1;
+}
+.licensebox blockquote * {
+    word-break: break-all;
+}
+:root { --sd-text: var(--sd-border) !important; }
+.top-box {
+    background-color: rgba(var(--general-light-background-color), 0.45) !important;
+    box-shadow: 0px 2px 4px 0px rgba(var(--general-shadow-color), 0.45) !important;
+    height: 6.25rem !important;
+    border: none !important;
+    border-radius: 28px !important;
+    padding: 0.65rem 0.3125rem !important;
+}
+.top-box .gradient-box {
+    background: transparent !important;
+    padding-left: 0.7rem !important;
+}
+.top-box .top-text p {
+    font-family: var(--sd-font);
+    font-size: 2.15rem;
+    font-weight: bold;
+    --wght: bold;
+    color: rgb(var(--sd-text));
+    position: relative;
+    margin: 0;
+    line-height: 2.75rem;
+}
+.top-box .top-text p {
+    font-size: 2.15rem !important;
+    line-height: 2.75rem !important;
+}
+.top-box .bottom-text p, .top-box .bottom-text::after {
+    font-style: normal !important;
+    background-color: rgba(var(--class-unknown), 0.5) !important;
+    padding-right: 0.5em;
+    border-radius: 8px;
+    padding-left: 0.3em;
+}
+.top-box::before { display: none; }
+.bottom-box {
+    margin: 1rem 0 3rem !important;
+}
+.top-box.class-0 .bottom-text p,
+.top-box.class-0 .bottom-text::after { background: rgba(var(--class-0), 0.5) !important; }
+
+.top-box.class-1 .bottom-text p,
+.top-box.class-1 .bottom-text::after { background: rgba(var(--class-1), 0.5) !important; }
+
+.top-box.class-2 .bottom-text p,
+.top-box.class-2 .bottom-text::after { background: rgba(var(--class-2), 0.5) !important; }
+
+.top-box.class-3 .bottom-text p,
+.top-box.class-3 .bottom-text::after { background: rgba(var(--class-3), 0.5) !important; }
+
+.top-box.class-4 .bottom-text p,
+.top-box.class-4 .bottom-text::after { background: rgba(var(--class-4), 0.5) !important; }
+
+.top-box.class-5 .bottom-text p,
+.top-box.class-5 .bottom-text::after { background: rgba(var(--class-5), 0.5) !important; }
+
+:is(.class-habitable, .class-宜居).top-box .bottom-text p,
+:is(.class-habitable, .class-宜居).top-box .bottom-text::after { background: rgba(var(--class-habitable), 0.5) !important; }
+
+:is(.class-unknown, .class-未知).top-box .bottom-text p,
+:is(.class-unknown, .class-未知).top-box .bottom-text::after { background: rgba(var(--class-unknown), 0.5) !important; }
+
+:is(.class-deadzone, .class-死区, .class-死區).top-box .bottom-text p,
+:is(.class-deadzone, .class-死区, .class-死區).top-box .bottom-text::after { background: rgba(var(--class-deadzone), 0.5) !important; }
+
+:is(.class-pending, .class-等待分级, .class-等待分級).top-box .bottom-text p,
+:is(.class-pending, .class-等待分级, .class-等待分級).top-box .bottom-text::after { background: rgba(var(--class-pending), 0.5) !important; }
+
+:is(.class-n\/a, .class-不适用, .class-不適用).top-box .bottom-text p,
+:is(.class-n\/a, .class-不适用, .class-不適用).top-box .bottom-text::after { background: rgba(var(--class-n-a), 0.5) !important; }
+
+:is(.class-amended, .class-修正, .class-运变, .class-運變).top-box .bottom-text p,
+:is(.class-amended, .class-修正, .class-运变, .class-運變).top-box .bottom-text::after { background: rgba(var(--class-amended), 0.5) !important; }
+
+:is(.class-omega, .class-终结, .class-終結).top-box .bottom-text p,
+:is(.class-omega, .class-终结, .class-終結).top-box .bottom-text::after { background: rgba(var(--class-omega), 0.5) !important; }
+.bottom-box ul li::before { border-radius: 88px; }
+:root { --backos-size: 1; }
+.backos-logo {
+    text-align: center;
+    font-size: calc(67px * var(--backos-size));
+    font-weight: 600;
+    position: relative;
+    width: max-content;
+    margin: 0 auto;
+}
+.backos-logo .bos2::before {
+    content: "一";
+    position: absolute;
+    font-size: calc(90px * var(--backos-size));
+    top: calc(45px * var(--backos-size));
+    color: rgba(var(--link-color));
+}
+.backos-logo h1 { font-size: 0.5em; }
+.backos-logo .bos1 {
+    font-size: calc(72px * var(--backos-size));
+}
+.backos-logo .bos2 {
+    font-size: calc(80px * var(--backos-size));
+    display: inline-flex;
+    justify-content: center;
+}
+@media only screen and (max-width: 600px) {
+    :root { --backos-size: 0.9; }
+}
+@media only screen and (max-width: 500px) {
+    :root { --backos-size: 0.8; }
+}
+@media only screen and (max-width: 400px) {
+    :root { --backos-size: 0.65; }
+}
+@media only screen and (max-width: 365px) {
+    :root { --backos-size: 0.5; }
+}
+@media only screen and (max-width: 200px) {
+    :root { --backos-size: 0.3; }
+}
+[[/module]]
+[[div class="lightblock"]]
+[[div_ class="backos-logo"]]
+[[span class="bos1"]]B[[/span]]ack[[span class="bos2"]]OS[[/span]]
++* 26.0.4
+[[/div]]
+
+= **BackOS 26** 是由 [[*user lanbaoshi1145]] 以 **知名手机系统** 为主题制作的版式，基于 [[[https://backrooms-wiki-cn.wikidot.com/theme:super-liminal|超阈限]]] 。[[footnote]]以防你不知道，此版式的顶栏在电脑端与手机端的显示效果是不一样的。[[/footnote]]
+
+= 这是此版式的第 **3** 个大版本的第 **4** 个小版本，如果您发现了**漏洞**或想给此版式提出**建议**，请私信 [[*user lanbaoshi1145]] 或在讨论区发出您的**反馈**。
+[[div_ style="display: grid; justify-content: center; text-align: center;"]]
+[[include :scp-wiki-cn:component:coltop show=更新了什么？|hide=隐藏更新内容]]
++* 26.0.4
+紧急修复已知问题，优化了部分动画和 UI ，并加入了渐变标题预设。
+
++* 26.0.3
+针对无圆角模式进行了兼容性改动。
+
++* 26.0.2
+优化了部分动画和 UI ，并加入了一个内置组件。
+
++* 26.0.1
+修复了已知问题。
+
++* 26.0
+就只是去除了暗色模式和一些没用的东西。
+
+[[include :scp-wiki-cn:component:coltop show=别告诉我你想看RC和beta时期的。|hide=隐藏更新内容]]
++* Release Candidate 2
+* 增加了切行岛。
+* 优化了部分动画。
+* 增加了 BackPhone 。
+* --把版本号改了。--
+
++* Release Candidate 1
+* 增加了暗色模式。
+* 增加了一些 Div 和 Span 。
+* 修复了一些我从来没注意到的 BUG 。
+* --把版本号改了。--
+
++* Beta 5
+* 部分圆角的修改与补全。
+* 新增可选择的特殊生存难度样式。
+* 新增内置组件。
+* 为正式版的发布做准备。
+* --把版本号改了。--
+
++* Beta 4
+* 部分圆角的修改与补全。
+* 修复了一些 BUG 。
+* 灵动顶栏修改。
+* 修改了 @@[[note]]@@ 的样式。
+* 增加了方角模式。
+* 增加了居中顶栏预设。
+* 增加了背景图片透明度修改。
+* 增加了渐变颜色标题。
+* 增加了灵动框。
+* --把版本号改了。--
+
++* Beta 3
+* 部分圆角的修改与补全。
+* 整理了代码结构。
+* 修改了 Wikidot 提示框和脚注框的样式。
+* 修改了部分阴影。
+* 修改了部分按钮和 Div 的透明度。
+* 暂时删去了侧栏图片。
+* --把版本号改了。--
+[[include :scp-wiki-cn:component:colend]]
+[[include :scp-wiki-cn:component:colend]]
+[[/div]]
+= 如果您想在页面中引入此版式，请使用以下代码:
+[[div class="code"]]
+@@[[inc@@lude :backrooms-wiki-cn:theme:sup@@er-limi@@nal |day@@time=a]]@@
+@@[[inc@@lude :backroomss:theme:backos26@@]]@@
+[[/div]]
+= 如果您想修改背景图片，请使用以下代码:
+[[code]]
+[[module css]]
+:root {
+   --body-background-img-os: url("不要删除url和括号，把引号以内的东西替换成你的图片链接");
+   --body-background-img-os-blur: 背景模糊度(默认为3);
+}
+[[/module]]
+[[/code]]
+
+= 此外，本版式已经内置了 [[[https://scp-wiki-cn.wikidot.com/component:fade-in|渐显]]], [[[https://backrooms-wiki-cn.wikidot.com/component:animation|动画包]]][[footnote]]仅启用了生存难度系统的动画，其余请自行添加。[[/footnote]], [[[https://scp-wiki-cn.wikidot.com/component:markmywords|随心标 荧光笔]]] 组件，这使你不需要再额外引用它们。
+[[/div]]
+[[=]]
+[[div class="os-titlecolor" style="margin: 0 auto;"]]
++* BackOS 26 展示
+[[/div]]
+[[include :backrooms-wiki-cn:credit:start]]
+
+这是一个评分信息组件。要使用该组件，插入以下代码：
+
+[[div class="code"]]
+
+@@[[include :backrooms-wiki-cn:credit:start]]@@
+
+你的内容。
+
+@@[[include :backrooms-wiki-cn:credit:end]]@@
+
+[[/div]]
+
+[[include :backrooms-wiki-cn:credit:end]]
+
+@@@@
+
+
+[[include :backrooms-wiki-cn:component:level-class
+|class=1
+]]
+
+[[include :backrooms-wiki-cn:component:image-block
+|name=https://backrooms-wiki.wdfiles.com/local--files/level-0/OGLevel0.jpg
+|caption=**Level 0** 的第一张照片。
+]]
+
+**Level 0** 是一处非线性空间，__外观类似于一家零售店的储藏后室。__与它此前被确认的形式相似，Level 0 中的所有房间都在外观上呈现出具有共同表面特征的统一制式模样，例如泛黄的墙纸、潮湿的地毯和--以不一致方式安装的--荧光灯具。//然而，本层中不存在两个完全相同的房间//。
+[[/=]]
+----
+
++* 一号标题
+++* 二号标题
++++* 三号标题
+
+~~~~
+[[tabview]]
+[[tab 第一个分页]]
+
+[[collapsible show="+ 这是一个折叠。" hide="- 收起"]]
+折叠的内容。
+[[/collapsible]]
+
+* 无序列表
+* 列表之二
+ * 列表嵌套
+
+# 有序列表
+# 二号
+
+[[/tab]]
+[[tab 第二个分页]]
+
+这是第二个分页。要创建分页，使用以下代码：
+
+[[code]]
+[[tabview]]
+[[tab 第一个分页]]
+内容
+[[/tab]]
+[[tab 第二个分页]]
+内容
+[[/tab]]
+[[/tabview]]
+[[/code]]
+
+[[/tab]]
+[[tab 长分页]]
+这是一个长分页。长分页里面有许多文字。
+
+这是一个长分页。长分页里面有许多文字。
+
+这是一个长分页。长分页里面有许多文字。
+
+这是一个长分页。长分页里面有许多文字。
+
+这是一个长分页。长分页里面有许多文字。
+
+这是一个长分页。长分页里面有许多文字。
+
+这是一个长分页。长分页里面有许多文字。
+
+这是一个长分页。长分页里面有许多文字。
+
+这是一个长分页。长分页里面有许多文字。
+
+这是一个长分页。长分页里面有许多文字。
+
+这是一个长分页。长分页里面有许多文字。
+
+这是一个长分页。长分页里面有许多文字。
+[[/tab]]
+[[tab 名字很长的分页，名字很长的分页，名字很长的分页，名字很长的分页，名字很长的分页。]]
+内容。
+[[/tab]]
+[[tab 空分页]]
+[[/tab]]
+[[tab 空分页]]
+[[/tab]]
+[[tab 空分页]]
+[[/tab]]
+[[/tabview]]
+[[=]]
+||~ 这是一个 ||~ 表格 ||
+|| 制作它的 || 方法 ||
+|||| 请查询维基语法。 ||
+
+> @@> blockquote@@
+> @@[[div class="blockquote"]]@@
+[[code]]
+[[div class="code"]]
+[[/code]]
+[[div class="lightblock"]]
+@@[[div class="lightblock"]]@@
+[[/div]]
+[[div class="darkblock"]]
+@@[[div class="darkblock"]]@@
+[[/div]]
+[[div class="styled-quote"]]
+@@[[div class="styled-quote"]]@@
+[[/div]]
+[[div class="dark-styled-quote"]]
+@@[[div class="dark-styled-quote"]]@@
+[[/div]]
+[[div class="lightblock butcircle"]]
+@@[[div class="lightblock butcircle"]]@@
+[[/div]]
+[[div class="styled-quote butcircle"]]
+@@[[div class="styled-quote butcircle"]]@@
+[[/div]]
+[[div class="mordenblock"]]
+@@[[div class="mordenblock"]]@@
+[[/div]]
+[[div class="blockquote butmorden"]]
+@@[[div class="blockquote butmorden"]]@@
+[[/div]]
+[[div class="os-titlecolor" style="margin: 0 auto;"]]
++ @@[[div class="os-titlecolor"]]@@
+[[/div]]
+[[note]]
+= {{@@[[note]]@@}}
+= 不强势的。
+[[/note]]
+
+[[div class="warning-top-box"]]
+
++* 你似乎掉入了后室。
+
+@@[[div class="warning-top-box"]]@@
+
+[[/div]]
+
+@@ @@
+
+= [[span class="nblock"]]{{@@[[span class="nblock"]]@@}}[[/span]]
+
+= 你应该试着选中上面的黑块。
+
+= [[span class="bblock"]]{{@@[[span class="bblock"]]@@}}[[/span]]
+
+= [[span class="dblock"]]{{@@[[span class="dblock"]]@@}}[[/span]]
+
+= [[span class="keycap"]]{{@@[[span class="keycap"]]@@}}[[/span]]
+
+= [[span class="os-keycap"]]{{@@[[span class="os-keycap"]]@@}}[[/span]]
+
+= [[span class="ruby"]]{{@@[[span class="ruby"]]@@}}[[span class="rt"]]{{@@[[span class="rt"]]@@}}[[/span]][[/span]]
+
+[[div class="footer-wikiwalk-nav"]]
+[[=]]
+<< [[[https://backroomss.wikidot.com/theme:the-backrooms-hell|亡者归冢 版式]]] | {{@@[[div class="footer-wikiwalk-nav"]]@@}} | [[[https://backroomss.wikidot.com/theme:pumpkin-eyes|南瓜之眼 版式]]] >>
+[[/=]]
+[[/div]]
+
+[[div class="meta-title"]]
+{{@@[[div class="meta-title"]]@@}}
+[[/div]]
+
+[[div class="licensebox"]]
+[[collapsible show="‡ 授权 / 引用" hide="‡ 隐藏授权 / 引用"]]
+请按如下方式引用此页：
+> “[[[https://backroomss.wikidot.com/theme:backos26|BackOS 26 美学版式]]]”，作者 Lanbaoshi1145，来自后室S分站。原文链接：[[[https://backroomss.wikidot.com/theme:backos26]]]。遵循 CC BY-SA 3.0 协议。
+=====
+更多授权相关信息，请查阅[https://backroomss.wikidot.com/licensing-guide 授权指导]。
+[[/collapsible]]
+[[/div]]
+
+溶飞件技现亮需冲金组架业节社情为。问假半酒危洋刻打背担地想等建金找你号职受诗！宜几合安食末坐跑司氢乐议棉只坚取日末公钟片白严线表检个号基议预四李价团书加马乎，争左却改测肉就转以来后司细李亮顶宜拿风求叫推语附帮呼船角离抗左几只跟雷乙帮已兰混同。鲁海顾广首尽村合控班参生轻城列变下须始依打帝限帝研持台频怎源苏业。稳基独善价运吸等喜元验见已几富液怎独乐温改历什游鱼责九祖效印受送性新把还半味。双特今盐为级首降天急解许，己延被月世许生子州你积轮者千列够事待吗决终北点飞丝鸡，船输太曲敌层皮影。氧击保五依。
+[[div class="dynamicbox"]]
+**@@[[div class="dynamicbox"]]@@**
+
+这是灵动框（Dynamicbox）。你可以在里面塞入任何类型的内容。这些内容会相对于围绕在其旁边的内容浮动在页面的一侧，当然，如果你是手机端，你就看不到这番美景了。
+[[/div]]办者营怀充立止终针袁探溶酒伤州分拉与承冲演意含。可眼自压该是地职够照济领犯十卫病连兴拉变排总该它初城会法状火书军景父云权。粒尽层般害乙错尽普浓陆圆南重交站陈传点待百。都选视念始排第研章角回职材联过需聚胞领酒乱路去阳，鸡流磁到公宣过罗宣掉状平人器益平只后飞。位周又小去九适棉率手答刚注附浓交马试所食达降间麼研火套待剂属讨顾。微医席示语冲绍权向剂调煤鱼缺较尼地耐凯子批四式配观。板集各太背宪错兵款察句谈费儿冷茶盟欢望难规视零肥负条扩因围，以结房径食杂急数呼话般事卫每现假接整选写重甚营平货包存选测委案好坐表织具体故述。封防粉赵拉激道包赵装汉脚星凯面被载握目答。长父项除践英秋初除清诉项审社那宁创坐起研。
+[[div class="dynamicbox right"]]
+**@@[[div class="dynamicbox right"]]@@**
+[[/div]]列汉孔画央女排超航心古展怕井，间府名密师晚油古会人。持求米带染味温占菜传阳假教还石些沿常青例耐侵官谈自米减举好，入浓客向消长径色至地派方检氧怕映众直普曲比？至均走值算相停化令酒举七概陆位病会就女甚达需两数主生销切始。犯望露职井女迫多掌盐济造易掌积般甲绿和迅乙县活！鲁共木才持茶搞玉台业始究感发进主你之古坐叫湖任玉酸巴另是改关找。硫雨世给免第服稳财展增到长范减超八百站财免厂调史著波照妈数技号探眼还英产日帝祖死汽，蒸缩范别汉眼吃口领唱束路做加在几金检酒田难核征水血袁却火须谓最乱真资亮州宽。清次易较风永守怕受集死吧若显席终母。器修属丰京力细粒丝剂究调切。
+
+但除此之外，还有更灵动的。
+
+这个东西大概叫什么灵动...不，切行岛，它有四种版本，分别为: **标准版**、--**Plus**--、**Air**、**Pro**、**Pro Max**。
+
+让我们看看**标准版**。
+
+[[div class="noclip-island"]]
+[[span class="island-text"]]也许你应该点击我。[[/span]]
+[[span class="island-text-hover"]]你说得对，但后室强势黄的。[[/span]]
+[[/div]]
+
+要想使用这个，请在你的文章里输入:
+
+[[code]]
+[[div class="noclip-island"]]
+[[span class="island-text"]]请输入[[/span]]
+[[span class="island-text-hover"]]文本[[/span]]
+[[/div]]
+[[/code]]
+
+让我们看看 **Air** 吧。
+
+[[div class="noclip-island-air"]]
+[[span class="island-text"]]来点击我吧！[[/span]]
+[[span class="island-text-hover"]]极致的轻薄。[[/span]]
+[[/div]]
+
+是的，**Air** 达到了**极致的轻薄**，看看你需要做什么:
+
+[[code]]
+[[div class="noclip-island-air"]]
+[[span class="island-text"]]极致的轻薄。[[/span]]
+[[span class="island-text-hover"]]极致的轻薄。[[/span]]
+[[/div]]
+[[/code]]
+
+让我们看看 **Pro** 吧，更好的切行岛。
+
+[[div class="noclip-island-pro"]]
+[[span class="island-text"]]你为什么不点击我呢？[[/span]]
+[[span class="island-text-hover"]]感谢你的点击，奖励将在十年后发放。[[/span]]
+[[/div]]
+
+非常好。
+
+[[code]]
+[[div class="noclip-island-pro"]]
+[[span class="island-text"]]嘿[[/span]]
+[[span class="island-text-hover"]]哈喽哈喽哈喽哈喽哈喽[[/span]]
+[[/div]]
+[[/code]]
+
+**Pro Max**？这个我不知道。
+
+[[div class="noclip-island-pro-max"]]
+[[span class="island-text"]]你最好点击我。[[/span]]
+[[span class="island-text-hover"]]感谢你的点击，奖励将在百年后发放。[[/span]]
+[[/div]]
+
+挺大的。
+
+[[code]]
+[[div class="noclip-island-pro-max"]]
+[[span class="island-text"]]Bigger[[/span]]
+[[span class="island-text-hover"]]And IDK[[/span]]
+[[/div]]
+[[/code]]
+
+你想知道切行岛的**进阶玩法**吗？
+
+适用于 **标准版** 和 **Air**:
+
+[[code]]
+[[div class="noclip-island" style="--noclip-island-width: 12rem; --noclip-island-width-hover: 13rem;"]]
+[[span class="island-text"]]哇，我长了3Rem！[[/span]]
+[[span class="island-text-hover"]]为什么我只长了1rem？[[/span]]
+[[/div]]
+[[/code]]
+
+具体我就不展示了，因为你在**视口宽度过小**情况下的手机端这么干**可能**会把切行岛给玩坏的，我们不能确保每个人的手机视口宽度都超过400px。
+
+适用于 **Pro** 和 **Pro Max**:
+
+[[code]]
+[[div class="noclip-island-pro" style="--noclip-island-pro-width: 12rem; --noclip-island-pro-height: 9rem; --noclip-island-pro-hover-width: 15.63rem;"]]
+[[span class="island-text"]]我变宽了3rem。[[/span]]
+[[span class="island-text-hover"]]我变长了1.5rem，但为什么我没变宽？[[/span]]
+[[/div]]
+[[/code]]
+
+同时，我们还有一个东西。
+
+[[div class="backphone" style="background: rgb(237, 233, 223);"]]
+[[div class="noclip-island-pro"]]
+[[span class="island-text-hover"]]别看手机了，A.N.D[[footnote]]一个虚构的后室团体，暗逐后室联盟。[[/footnote]]的人来清算你了。[[/span]]
+[[/div]]
+[[div class="backphone-content"]]
+[[div style="background-color: rgb(72, 69, 60);color: rgb(237, 233, 223);padding: 0.01rem 1rem;margin: 0.5rem 0 0.5rem 0.25rem;box-shadow: 0 0.2rem 0.3rem rgba(25, 20, 16, 0.25);"]]
+啥，你是说你在BackOS中看见了阈限版式？我们会处理的。
+[[/div]]
+[[div style="text-align: center;--box-shadow: rgba(25, 20, 16, 0.1);display: block;margin: 0.5em 1.25rem;padding: 0.825em 1.25em;clear: both;border: 0.0625rem solid rgba(25, 20, 16, 0.25);background-color: rgb(255, 251, 240);box-shadow: 0 0.0625rem 0.125em var(--box-shadow);"]]
+谢谢。
+[[/div]]
+
+@@[[div class="backphone"]]@@
+@@[[div class="noclip-island-pro"]]@@
+@@[[span class="island-text-hover"]]额，你好？[[/span]]@@
+@@[[/div]]@@
+@@[[div class="backphone-content"]]@@
+@@文本@@
+@@[[/div]]@@
+@@[[/div]]@@
+
+额，你要想把这玩意改成阈限颜色的话，把开头换成:
+
+@@[[div class="backphone" style="background: rgb(237, 233, 223);"]]@@
+
+[[/div]]
+[[/div]]
+
++* 预设
+[[/=]]
+**BackOS 26** 版式提供了三个预设方案，可供你快捷改变其外观。要使用预设，请将引用语句修改为：
+
+[[div style="font-size: 1rem; font-weight: 700; margin-top: 1.5rem; font-family: var(--mono-font)"]]
+[[div class="code"]]
+@@[[include :backroomss:theme:backos26@@
+[[span style="color: rgba(var(--accept-color))"]]@@|预设方案1@@[[/span]]
+[[span style="color: rgba(var(--warning-color))"]]@@|预设方案2@@[[/span]]
+@@]]@@
+[[/div]]
+[[/div]]
+
+[[=]]
+
+**[[span style="color: rgba(var(--accept-color))"]]绿色 - 稳定[[/span]]**
+
+此预设在绝大多数环境下都完全可用且稳定。
+
+**[[span style="color: rgba(var(--neutral-color))"]]黄色 - 实验性[[/span]]**
+
+此预设在大部分环境下都可用但可能有兼容性问题并导致引发冲突。
+
+[[div class="code" style="color: rgba(var(--accept-color))"]]
+|no-rounded=a
+[[/div]]
+
+让整个版式的圆角都变成方角。
+
+[[div class="code" style="color: rgba(var(--accept-color))"]]
+|title-center=a
+[[/div]]
+
+让标题居中。
+
+[[div class="code" style="color: rgba(var(--accept-color))"]]
+|os-title=a
+[[/div]]
+
+让标题变为渐变色。
+
+[[div class="code" style="color: rgba(var(--neutral-color))"]]
+|os-sd=a
+[[/div]]
+
+修改生存难度的样式。本页面就使用了这个预设！[[footnote]]请谨慎使用，如果您对生存难度进行过度自定义可能会导致样式冲突。[[/footnote]]
+
+[[/=]]
+[[/iftags]]
+[[include :scp-wiki-cn:component:fade-in]]
+[[include :backrooms-wiki-cn:component:animation
+|sd=*
+]]
+[[include :scp-wiki-cn:component:markmywords]]
+[[module css]]
+/* --------------
+   Fuck Wikidot
+
+   Singleplayer
+   Multiplayer
+ - Setting
+   Exit Game
+
+  - BackOS 26 By Lanbaoshi1145
+  - Version: BackOS 26.0.4
+  - Unless otherwise stated, the content of this page is licensed under Creative Commons Attribution-ShareAlike 3.0 License.
+   
+  >---------------<
+
+  - Setting Page
+  
+  - Language English
+             French  
+           - Chinese
+
+  >---------------<
+
+  - Setting Page
+  
+  - Language Chinese
+
+  >---------------<
+                 
+  - Loading...
+
+  >---------------<
+
+   爆操维基点
+
+ - 单人游戏
+   多人游戏
+   设置
+   退出游戏
+  
+  - 后梦OS 由 Lanbaoshi1145 制作
+  - 版本: 后梦OS 26.0.4
+  - 除非特别注明，本页内容采用以下授权方式: Creative Commons Attribution-ShareAlike 3.0 License
+
+  ---------------*/
+   
+:root {
+    --backos-version: "Version: BackOS 26.0";
+    --sidebar-media-background-color: var(--light-color-2), 0.6;
+    --sidebar-title-background-color: var(--dark-color-2), 0.5;
+    --sidebar-background-color: var(--light-color-1), 0.5;
+    --footer-background-color: var(--general-medium-background-color), 0.8;
+    --header-background-bottom: var(--light-color-2), 0.7;
+    --header-background-top: var(--light-color-2), 0.55;
+    --border-bg-color: var(--general-light-border-color);
+    --bb-bg-color: var(--general-light-background-color);
+    --license-background-color: var(--light-color-1), 0.45;
+    --page-option-background-color: var(--light-color-2), 0.45;
+    --page-tag-background-color: var(--dark-color-2), 0.45;
+    --page-tag-border-color: var(--general-medium-background-color), 0.85;
+    --topbar-hover-text-color: var(--topbar-text-color);
+    --topbar-hover-background-color: var(--dark-color-3), 0.05;
+    --hr-color: var(--dark-color-3);
+
+    --light-color-1: 252, 252, 252;
+    --body-width: 50rem;
+    --topbar-background-color: var(--dark-color-2), 0.1;
+    --topbar-drop-background-color: var(--dark-color-4), 0.53;
+
+    --page-title-border-color: var(--dark-color-4);
+    --body-background-img-os: url(https://backrooms-wiki.wdfiles.com/local--files/level-0/OGLevel0.jpg);
+    --body-background-img-os-blur: 3;
+      
+    --note-background-color: 255, 255, 255;
+    --note-border-color: var(--general-light-background-color);
+  
+    --table-border-color: var(--dark-color-3);
+    
+    --dynamicbox-background-color: var(--general-dark-background-color);
+    --dynamicbox-text-color: var(--general-dark-text-color);
+    
+    --fade-in-delay: 0.15s;
+
+    --hovertip-background-color: var(--general-light-background-color), 0.75;
+    --hovertip-border-color: 0, 0, 0, 0;
+    --footnote-block-background-color: var(--dark-color-2), 0.5;
+}
+
+/* 8px 半径 */
+#wd-editor-toolbar-panel a,
+#search-top-box-form .button,
+a#account-topbutton,
+a.action-area-close,
+#view-diff-div > p > a,
+.yui-navset,
+table.wiki-content-table {
+    border-radius: 8px;
+}
+
+/* 28px 半径 */
+blockquote,
+.blockquote,
+.butcircle,
+#lock-info,
+#edit-page-comments,
+#edit-page-form,
+#edit-page-textarea,
+.page-source,
+.owindow,
+div.modalbox,
+div.infobox,
+div.modalbox > div:first-child,
+div.infobox-title,
+.owindow .title,
+.footnotes-footer,
+.bibitems,
+.hovertip,
+.owindow .button-bar > a:not([onclick*=cleanAll]),
+.owindow div[style*=margin-top] a {
+    border-radius: 28px;
+}
+
+/* 88px 半径 */
+div.buttons input,
+input.button,
+button,
+file,
+a.button,
+.page-options-bottom a,
+div[id*=page-options-bottom] > a,
+#edit-page-form div.buttons input,
+.change-textarea-size a,
+.edit-help-34 a,
+#edit-page-title,
+div.rate-box-with-credit-button,
+div.page-rate-widget-box,
+div.creditButtonStandalone,
+table.page-history tr td:nth-child(4) a,
+.page-watch-options a,
+#side-bar::after {
+    border-radius: 88px;
+}
+
+blockquote,
+.blockquote {
+    border: none;
+}
+
+#header h2 span::before {
+    opacity: 0.2;
+}
+
+body::before {
+    content: " ";
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: var(--body-background-img-os);
+    background-size: cover;
+    filter: blur(calc(var(--body-background-img-os-blur)* 1px));
+}
+
+body {
+    background: rgba(var(--background-color), 0.1);
+    overflow-x: hidden;
+}
+
+.mordenblock {
+    padding: 0.01rem 1rem;
+    margin: 0.5rem 0 0.5rem 0.25rem;
+    background-color: rgba(var(--general-light-background-color), 0.45);
+    -webkit-backdrop-filter: blur(calc(var(--general-blur)));
+    backdrop-filter: blur(calc(var(--general-blur)));
+}
+
+.lightblock.butmorden {
+    background: rgba(var(--lightblock-background-color), 0.45);
+    -webkit-backdrop-filter: blur(calc(var(--general-blur)));
+    backdrop-filter: blur(calc(var(--general-blur)));
+}
+
+.darkblock.butmorden {
+    background: rgba(var(--darkblock-background-color), 0.6);
+    -webkit-backdrop-filter: blur(calc(var(--general-blur)));
+    backdrop-filter: blur(calc(var(--general-blur)));
+}
+
+.blockquote.butmorden {
+    background: rgba(var(--blockquote-background-color), 0.45);
+    -webkit-backdrop-filter: blur(calc(var(--general-blur)));
+    backdrop-filter: blur(calc(var(--general-blur)));
+}
+
+#side-bar .side-block {
+    -webkit-backdrop-filter: blur(calc(var(--general-blur) * 7));
+    backdrop-filter: blur(calc(var(--general-blur) * 7));
+}
+
+#side-bar {
+    box-shadow: 0px 0px 15px rgba(var(--general-shadow-color));
+    transition: left 0.5s cubic-bezier(.22, .9, .32, 1);
+}
+
+#side-bar::before {
+    content: "";
+    position: fixed;
+    left: 0;
+    height: 14rem;
+    top: calc(50vh - 7rem);
+    width: 2rem;
+    background: transparent;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+#side-bar::after {
+    content: "◀";
+    position: fixed;
+    left: 1rem;
+    height: 14rem;
+    top: calc(50vh - 7rem);
+    width: 1rem;
+    color: rgba(var(--sidebar-handle-text-color));
+    background: rgba(var(--sidebar-handle-background-color));
+    z-index: -1;
+    opacity: 1;
+    transition: opacity var(--general-transition-time-fast) ease, left calc(2* var(--general-transition-time-fast)) ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+    padding: 0.5rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    #side-bar::before, #side-bar::after {
+        display: none;
+    }
+}
+
+#top-bar {
+    box-shadow: 0px 12px 20px 0px rgba(var(--general-shadow-color), 0.2);
+}
+
+div[id*=page-options-bottom] > a {
+    transition: all var(--general-transition-time-slow);
+    padding: 0 0.5rem;
+}
+
+#license-area {
+    -webkit-backdrop-filter: blur(calc(var(--general-blur) * 5));
+    backdrop-filter: blur(calc(var(--general-blur) * 5));
+}
+
+.page-watch-options {
+    color: transparent;
+}
+
+#main-content {
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
+    background-color: rgba(var(--general-light-background-color), 0.35);
+    box-shadow: -1px 3px 20px 0px rgba(var(--general-light-background-color), 0.35) inset;
+    border-radius: 29px;
+}
+/* credit-button-fixed  */
+
+#main-content::before {
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 100%;
+    -webkit-backdrop-filter: blur(calc(var(--general-blur) * 7));
+    backdrop-filter: blur(calc(var(--general-blur) * 7));
+    border-radius: 29px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* credit-button-fixed end */
+div[id*=page-options-bottom] > a:is(:hover, :active) {
+    box-shadow: inset 0px 0px 0px 20px rgba(var(--page-option-hover-background-color));
+    transition: all var(--general-transition-time-slow);
+}
+
+.page-watch-options {
+    font-size: 0;
+}
+
+.page-watch-options a {
+    background-color: rgba(var(--general-light-background-color), 0.45);
+    color: rgba(var(--general-light-text-color));
+    transition: 0.15s;
+    padding-block: 0.2rem;
+    padding-inline: 0.4rem;
+    font-size: 0.85rem;
+    margin-inline: 0.1rem;
+}
+
+.page-watch-options a[href="http://www.wikidot.com/faq:watching"] {
+    display: inline-flex;
+    justify-content: center;
+    width: 2.5ch;
+    padding: 0;
+}
+
+.page-watch-options a:hover {
+    background-color: rgba(var(--general-dark-background-color));
+    color: rgba(var(--general-dark-text-color));
+    transition: 0.15s;
+}
+
+@media only screen and (max-width: 400px) {
+    .page-watch-options a:not([href="http://www.wikidot.com/faq:watching"]) {
+        background: none !important;
+        color: rgba(var(--link-color));
+        padding: 0;
+    }
+    .page-watch-options a:not([href="http://www.wikidot.com/faq:watching"]):is(:hover, :active, :focus, :focus-within) {
+        color: rgba(var(--hover-link-color)) !important;
+
+    }
+}
+
+.yui-navset .yui-nav {
+    box-shadow: none;
+}
+div.rate-box-with-credit-button, div.page-rate-widget-box, div.creditButtonStandalone {
+    background: rgba(var(--rating-background-color), 0.45);
+    transition: border-bottom-color var(--general-transition-time-slow);
+    overflow: hidden;
+}
+:is(div.rate-box-with-credit-button, div.page-rate-widget-box, div.creditButtonStandalone):has(.rateup a:is(:hover, :active, :focus, :focus-within)) {
+    border-bottom-color: rgba(var(--rating-rateup-color));
+}
+:is(div.rate-box-with-credit-button, div.page-rate-widget-box, div.creditButtonStandalone):has(.ratedown a:is(:hover, :active, :focus, :focus-within)) {
+    border-bottom-color: rgba(var(--rating-ratedown-color));
+}
+:is(div.rate-box-with-credit-button, div.page-rate-widget-box, div.creditButtonStandalone):has(.cancel a:is(:hover, :active, :focus, :focus-within)) {
+    border-bottom-color: rgba(var(--rating-cancel-color));
+}
+:is(div.rate-box-with-credit-button, div.page-rate-widget-box, div.creditButtonStandalone):has(div.creditButton p a:is(:hover, :active, :focus, :focus-within)) {
+    border-bottom-color: rgba(var(--rating-info-color));
+}
+#license-area::after {
+    content: var(--backos-version);
+    font-weight: bold;
+    text-align: center;
+    display: block;
+}
+.os-titlecolor {
+    background: linear-gradient(90deg, #304cca, #2596d6 33.33%, #304cca 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300% auto;
+    width: max-content;
+}
+
+@media only screen and (max-width: 1024px) {
+    :root {
+        --topbar-hover-text-color: var(--light-color-2);
+    }
+    #top-bar div[class*=top-bar] > ul > li > a {
+        color: rgba(var(--topbar-drop-text-color));
+    }
+    #top-bar .mobile-top-bar {
+        background: rgba(var(--dark-color-3));
+        border-radius: 28px;
+        width: 75% !important;
+        margin: 0 auto;
+        top: 1rem;
+        box-shadow: 0px 3px 20px 0px rgba(var(--dark-color-3), 0.8);
+    }
+    #header {
+        background: none;
+        box-shadow: none;
+    }
+    #header::before {
+        background: var(--header-background-image);
+        box-shadow: 0px 0px 8.5px -1px rgba(var(--general-shadow-color), 0.42),
+        0px 0px 68px -21px rgba(var(--general-shadow-color), 0.1);
+    }
+    #top-bar {
+        background: none;
+        box-shadow: none;
+    }
+   #top-bar .mobile-top-bar .open-menu {
+        border-radius: 28px 0 0 28px;
+        overflow-x: hidden;
+    }
+    #top-bar .mobile-top-bar .open-menu a::before {
+        background: rgba(var(--topbar-drop-text-color));
+    }
+    #top-bar .mobile-top-bar .open-menu a:is(:hover, :active, :focus, :focus-within) {
+        box-shadow: inset 0 -0.2rem 0 rgba(var(--topbar-hover-border-color));
+    }
+    #top-bar div[class*=top-bar] > ul > li > ul {
+        border-radius: 18px;
+        overflow: hidden;
+        transform: translateY(0px);
+        border-top: solid calc(var(--topbar-drop-border-width)) rgba(var(--topbar-drop-border-color));
+        transition: all var(--general-transition-time-fast) ease-in-out;
+    }
+    #top-bar div[class*=top-bar] > ul > li:hover > ul {
+        transform: translateY(15px);
+        transition: all var(--general-transition-time-fast) ease-in-out;
+    }
+}
+table.wiki-content-table th {
+    border: none;
+    padding: 0.5em 0.7em;
+}
+table.wiki-content-table td {
+    border: none;
+    padding: 0.5em 0.7em;
+}
+table.wiki-content-table {
+    box-shadow: 0px 3px 10px 0px rgba(var(--general-shadow-color),0.7);
+    overflow: hidden;
+}
+
+#account-options {
+    overflow: hidden;
+}
+
+div.modalbox > div:first-child, div.infobox-title, .owindow .title {
+    margin: 0.3rem;
+}
+
+#top-bar > .mobile-top-bar > ul > li:last-child {
+    border-radius: 0px 28px 28px 0px;
+    overflow-x: hidden;
+}
+.footnotes-footer, .bibitems {
+    border-left: none;
+}
+
+.hovertip {
+    padding: 4px;
+    backdrop-filter: blur(var(--general-blur));
+    box-shadow: 0px 0px 20px 0px rgba(var(--general-shadow-color), 0.4);
+}
+
+.yui-navset {
+    overflow: hidden;
+    box-shadow: 0px 3px 10px 0px rgba(var(--general-shadow-color), 0.3);
+}
+#top-bar div[class*=top-bar] > ul > li:is(:hover, :active, :focus, :focus-within, .sfhover) > a {
+    box-shadow: inset 0 -0.2rem 0 rgba(var(--topbar-hover-border-color));
+}
+#top-bar div[class*=top-bar] > ul > li:is(:hover, :active, :focus, :focus-within, .sfhover) {
+    background: rgba(var(--topbar-hover-background-color));
+}
+#page-content div.dynamicbox {
+    background-color: rgb(var(--dynamicbox-background-color));
+    color: rgb(var(--dynamicbox-text-color));
+    float: left;
+    max-width: calc(var(--body-width) / 2.25);
+    box-sizing: border-box;
+    margin: 0.25rem 1.25rem;
+    margin-left: clamp(calc(var(--body-width) / -4.5), calc((87.5vw - 95%) / -2), 0rem);
+    padding-inline: 1.2rem;
+    padding-block: 0.5rem;
+    font-size: 0.9125em;
+    border-radius: 28px;
+    border: solid 0.12rem rgba(var(--general-border-color), 0.4);
+}
+
+#page-content div.dynamicbox.right {
+    float: right;
+    margin-left: 1.25rem;
+    margin-right: clamp(calc(var(--body-width)/-4.5), calc((87.5vw - 95%)/-2), 0rem);
+}
+@media only screen and (max-width: 640px) {
+    #page-content div:is(.dynamicbox, .dynamicbox.right) {
+        float: none;
+        margin: 0.5rem auto;
+        width: 100%;
+    }
+}
+div.wiki-note {
+    border-radius: 4px;
+}
+.page-tags::before {
+    border-radius: 8px 8px 8px 0px;
+}
+.warning-top-box {
+    background: linear-gradient(to bottom, rgba(var(--warning-color)), rgba(var(--general-dark-background-color)) 30%);
+    border: 2px solid #a1a1a1;
+    border-radius: 2px;
+    width: 50%;
+    margin: 0 auto 2em;
+    text-align: center;
+    padding: 10px;
+    color: rgba(var(--general-dark-text-color));
+    --h1-color: rgba(var(--general-dark-text-color));
+}
+
+@media (max-width: 479px) {
+  .warning-top-box {
+    width: auto;
+    margin: 0 0 2em;
+  }
+}
+@media (min-width: 480px) and (max-width: 580px) {
+  .warning-top-box {
+    width: auto;
+    margin: 0 0.5em 2em;
+  }
+}
+@keyframes rainbow2 {
+  from {
+    color: #114514;
+  }
+  10% {
+    color: #191981;
+  }
+  50% {
+    color: #893364;
+  }
+  75% {
+    color: #810931;
+  }
+  100% {
+    color: #889464;
+  }
+}
+
+.lightblock.os-fuckerkiller {  
+  animation-name: rainbow2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, .25);
+ }
+
+.lightblock.os-fuckerkiller a {  
+  animation-name: rainbow2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+ }
+.nblock {
+    background-color: rgba(var(--text-color));
+}
+.os-keycap {
+    background-color: rgba(var(--general-light-background-color));
+    color: rgba(var(--general-light-text-color));
+    padding: 0.25em;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.125em 0 0.05em rgb(var(--dark-color-3), 0.5);
+}
+.os-keycap:active {
+    box-shadow: -1px -1px 0 0.05em rgb(var(--dark-color-3), 0.5);
+}
+#side-bar .close-menu {
+    transition: all 0.5s cubic-bezier(.22, .9, .32, 1);
+}
+@media screen and (prefers-reduced-motion: no-preference) {
+    #page-title, #breadcrumbs, #page-content > * {
+        animation-timing-function: cubic-bezier(.22, 1, .36, 1);
+    }
+}
+.noclip-island, .noclip-island-air {
+    margin: 0.25rem auto;
+    padding-inline: 1.2rem;
+    padding-block: 0.5rem;
+    width: var(--noclip-island-width);
+    --noclip-island-width: 9rem;
+    --noclip-island-width-hover: 12rem;
+    height: calc(1ch + 1rem);
+    min-height: calc(1ch + 1rem);
+    position: relative;
+    color: rgb(var(--dynamicbox-text-color));
+    white-space: nowrap;
+}
+.noclip-island::before, .noclip-island-air::before {
+    content: " ";
+    border-radius: 88px;
+    background-color: rgb(var(--dynamicbox-background-color));
+    width: var(--noclip-island-width);
+    height: calc(1ch + 1rem);
+    padding-inline: 1.2rem;
+    padding-block: 0.5rem;
+    transition: width 0.4s cubic-bezier(.22, .9, .32, 1);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: block;
+    transform: translateX(-50%);
+    border-radius: 88px;
+    z-index: -1;
+}
+.noclip-island span, .noclip-island-air span {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    transition: opacity 0.4s cubic-bezier(.22, .9, .32, 1);
+}
+.noclip-island .island-text, .noclip-island-air .island-text { opacity: 1; }
+.noclip-island .island-text-hover, .noclip-island-air .island-text-hover { opacity: 0; }
+.noclip-island:hover, .noclip-island-air:hover {
+    width: var(--noclip-island-width-hover);
+}
+.noclip-island:hover::before, .noclip-island-air:hover::before {
+    width: var(--noclip-island-width-hover);
+}
+.noclip-island:hover .island-text, .noclip-island-air:hover .island-text {
+    opacity: 0;
+}
+.noclip-island:hover .island-text-hover, .noclip-island-air:hover .island-text-hover {
+    opacity: 1;
+}
+.noclip-island br, .noclip-island-air br { display: none; }
+.noclip-island p, .noclip-island-air br { margin: 0; }
+.noclip-island-air { height: 1rem; font-size: 0.9rem; min-height: 1rem; }
+.noclip-island-air::before { height: 1rem; }
+.noclip-island-pro, .noclip-island-pro-max {
+    margin: 0.25rem auto;
+    padding-inline: 1.2rem;
+    padding-block: 0.5rem;
+    width: var(--noclip-island-pro-width);
+    --noclip-island-pro-width: 9rem;
+    --noclip-island-pro-height: 7.5rem;
+    --noclip-island-pro-hover-width: 15.63rem;
+    height: 1rem;
+    background-color: rgb(var(--dynamicbox-background-color));
+    color: rgb(var(--dynamicbox-text-color));
+    overflow: hidden;
+    position: relative;
+    border-radius: 88px;
+    transition: width 0.6s cubic-bezier(.22, .9, .32, 1),
+                height 0.6s cubic-bezier(.22, .9, .32, 1),
+                border-radius 0.6s cubic-bezier(.22, .9, .32, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.noclip-island-pro .island-text + br, .noclip-island-pro-max .island-text + br { display: none; }
+.noclip-island-pro p, .noclip-island-pro-max p { margin: 0; }
+.noclip-island-pro:hover, .noclip-island-pro-max:hover {
+    border-radius: 28px;
+    width: var(--noclip-island-pro-hover-width);
+    height: var(--noclip-island-pro-height);
+}
+.noclip-island-pro .island-text, .noclip-island-pro-max .island-text {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    transition: opacity 0.4s cubic-bezier(.22, .9, .32, 1);
+    white-space: nowrap;
+    opacity: 1;
+    font-size: 0.9rem;
+}
+.noclip-island-pro .island-text-hover, .noclip-island-pro-max .island-text-hover { opacity: 0; transition: opacity 0.4s cubic-bezier(.22, .9, .32, 1); }
+.noclip-island-pro:hover .island-text, .noclip-island-pro-max:hover .island-text {
+    opacity: 0;
+}
+.noclip-island-pro:hover .island-text-hover, .noclip-island-pro-max:hover .island-text-hover {
+    opacity: 1;
+}
+.noclip-island-pro-max { height: calc(1rem + 1ch); }
+.noclip-island-pro-max .island-text { font-size: 1rem; }
+@media only screen and (max-width: 380px) {
+    .noclip-island-pro {
+        box-sizing: border-box;
+        width: calc(var(--noclip-island-pro-width) + 2.4rem);
+        height: calc(1rem + 1rem);
+    }
+    .noclip-island-pro:hover {
+        width: 100%;
+        height: calc(var(--noclip-island-pro-height) + 1rem);
+    }
+    .noclip-island-pro-max {
+        box-sizing: border-box;
+        width: calc(var(--noclip-island-pro-width) + 2.4rem);
+        height: calc(1ch + 1rem + 1rem);
+    }
+    .noclip-island-pro-max:hover {
+        width: 100%;
+        height: calc(var(--noclip-island-pro-height) + 1rem);
+    }
+}
+.backphone {
+    height: 14.69cm;
+    width: 7.15cm;
+    margin: 0 auto;
+    background: rgba(var(--general-light-background-color));
+    border-radius: 40px;
+    border: solid 0.0144cm;
+    border-block-width: 0.141cm;
+    border-inline-width: 0.144cm;
+    padding: 1.2cm 0.6cm 1.2cm 0.6cm;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+.backphone::before {
+    content: " ";
+    position: absolute;
+    height: 0.1cm;
+    width: 2.3cm;
+    bottom: 0.28cm;
+    left: 50%;
+    border-radius: 88px;
+    transform: translateX(-50%);
+    background-color: rgba(var(--general-dark-background-color),0.25);
+}
+.backphone .backphone-content { width: 100%; height: 100%; overflow: auto; }
+.backphone .noclip-island-pro {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    --noclip-island-pro-width: 1.85cm;
+    --noclip-island-pro-hover-width: calc(96.07% - 2.4rem);
+}
+@media only screen and (max-width: 390px) {
+    .backphone {
+        width: 100%;
+    }
+    .backphone .noclip-island-pro:hover {
+        width: 96.07% !important;
+        height: calc(var(--noclip-island-pro-height) + 1rem);
+    }
+}
+.wd-editor-toolbar-panel ul li:hover ul, .wd-editor-toolbar-panel ul li.sfhover ul {
+    background-color: rgba(var(--general-button-background-color), 0.5);
+    gap: 3px;
+    backdrop-filter: blur(var(--general-blur));
+    display: flex;
+    border: none !important;
+    border-radius: 88px;
+}
+[[/module]]
+
+>[[ift{$no-rounded}gs -版式]]
+>[[iftags]]
+[[module CSS]]
+button,button::before,button::after,
+input,
+[onclick],[onclick]::before,[onclick]::after,
+[onclick] *,[onclick] *::before,[onclick] *::after,
+[id]:not([id^="u-"]),[id]:not([id^="u-"])::before,[id]:not([id^="u-"])::after,
+[id]:not([id^="u-"]) *:not(#page-content,#page-content *),[id]:not([id^="u-"]) *:not(#page-content,#page-content *)::before,[id]:not([id^="u-"]) *:not(#page-content,#page-content *)::after {
+    border-radius: 0px !important;
+}
+[[/module]]
+>[[/iftags]]
+>[[/ift{$no-rounded}gs]]
+
+>[[ift{$title-center}gs -版式]]
+>[[iftags]]
+[[module CSS]]
+#page-title {
+    text-align: center;
+}
+[[/module]]
+>[[/iftags]]
+>[[/ift{$title-center}gs]]
+
+>[[ift{$os-sd}gs -版式]]
+>[[iftags]]
+[[module CSS]]
+:root { --sd-text: var(--sd-border) !important; }
+.top-box {
+    background-color: rgba(var(--general-light-background-color), 0.45) !important;
+    box-shadow: 0px 2px 4px 0px rgba(var(--general-shadow-color), 0.45) !important;
+    height: 6.25rem !important;
+    border: none !important;
+    border-radius: 28px !important;
+    padding: 0.65rem 0.3125rem !important;
+}
+.top-box .gradient-box {
+    background: transparent !important;
+    padding-left: 0.7rem !important;
+}
+.top-box .top-text p {
+    font-family: var(--sd-font);
+    font-size: 2.15rem;
+    font-weight: bold;
+    --wght: bold;
+    color: rgb(var(--sd-text));
+    position: relative;
+    margin: 0;
+    line-height: 2.75rem;
+}
+.top-box .top-text p {
+    font-size: 2.15rem !important;
+    line-height: 2.75rem !important;
+}
+.top-box .bottom-text p, .top-box .bottom-text::after {
+    font-style: normal !important;
+    background-color: rgba(var(--class-unknown), 0.5) !important;
+    padding-right: 0.5em;
+    border-radius: 8px;
+    padding-left: 0.3em;
+}
+.top-box::before { display: none; }
+.bottom-box {
+    margin: 1rem 0 3rem !important;
+}
+.top-box.class-0 .bottom-text p,
+.top-box.class-0 .bottom-text::after { background: rgba(var(--class-0), 0.5) !important; }
+
+.top-box.class-1 .bottom-text p,
+.top-box.class-1 .bottom-text::after { background: rgba(var(--class-1), 0.5) !important; }
+
+.top-box.class-2 .bottom-text p,
+.top-box.class-2 .bottom-text::after { background: rgba(var(--class-2), 0.5) !important; }
+
+.top-box.class-3 .bottom-text p,
+.top-box.class-3 .bottom-text::after { background: rgba(var(--class-3), 0.5) !important; }
+
+.top-box.class-4 .bottom-text p,
+.top-box.class-4 .bottom-text::after { background: rgba(var(--class-4), 0.5) !important; }
+
+.top-box.class-5 .bottom-text p,
+.top-box.class-5 .bottom-text::after { background: rgba(var(--class-5), 0.5) !important; }
+
+:is(.class-habitable, .class-宜居).top-box .bottom-text p,
+:is(.class-habitable, .class-宜居).top-box .bottom-text::after { background: rgba(var(--class-habitable), 0.5) !important; }
+
+:is(.class-unknown, .class-未知).top-box .bottom-text p,
+:is(.class-unknown, .class-未知).top-box .bottom-text::after { background: rgba(var(--class-unknown), 0.5) !important; }
+
+:is(.class-deadzone, .class-死区, .class-死區).top-box .bottom-text p,
+:is(.class-deadzone, .class-死区, .class-死區).top-box .bottom-text::after { background: rgba(var(--class-deadzone), 0.5) !important; }
+
+:is(.class-pending, .class-等待分级, .class-等待分級).top-box .bottom-text p,
+:is(.class-pending, .class-等待分级, .class-等待分級).top-box .bottom-text::after { background: rgba(var(--class-pending), 0.5) !important; }
+
+:is(.class-n\/a, .class-不适用, .class-不適用).top-box .bottom-text p,
+:is(.class-n\/a, .class-不适用, .class-不適用).top-box .bottom-text::after { background: rgba(var(--class-n-a), 0.5) !important; }
+
+:is(.class-amended, .class-修正, .class-运变, .class-運變).top-box .bottom-text p,
+:is(.class-amended, .class-修正, .class-运变, .class-運變).top-box .bottom-text::after { background: rgba(var(--class-amended), 0.5) !important; }
+
+:is(.class-omega, .class-终结, .class-終結).top-box .bottom-text p,
+:is(.class-omega, .class-终结, .class-終結).top-box .bottom-text::after { background: rgba(var(--class-omega), 0.5) !important; }
+.bottom-box ul li::before { border-radius: 88px; }
+[[/module]]
+>[[/iftags]]
+>[[/ift{$os-sd}gs]]
+
+>[[ift{$dark-mode}gs -版式]]
+>[[iftags]]
+[[module css]]
+/* ltk是不是在学css来着，那这坨屎我就放这不管了等哪天看他学成了拉他来给我当苦力。 */
+:root {
+    --background-color: 252, 252, 252;
+    --text-color: var(--background-color);
+    --light-color-2: 15, 15, 11;
+    --dark-color-2: 26, 26, 17;
+    --light-color-1: 3, 3, 3;
+    --general-dark-text-color: var(--text-color);
+    --license-text-color: var(--text-color);
+    --sidebar-media-icon-color: var(--text-color);
+    --rating-info-color: var(--text-color);
+    --sidebar-title-text-color: var(--text-color);
+    --scrollbar-color: var(--text-color);
+    --link-color: 250, 43, 88;
+    --hover-link-color: 240, 33, 78;
+    --visited-link-color: 230, 23, 68;
+    --header-text-color: var(--text-color);
+    --topbar-text-color: var(--text-color);
+    --topbar-drop-text-color: var(--text-color);
+    --header-username-color: var(--text-color);
+    --account-button-text-color: var(--text-color);
+    --logo-image: url("https://github.backroomswiki.cn/Super_Liminal/images/white_logo.svg");
+    --lightblock-background-color: var(--general-light-text-color);
+    --lightblock-text-color: var(--general-light-background-color);
+    --styled-quote-background-color: var(--general-light-text-color);
+    --styled-quote-text-color: var(--general-light-background-color);
+    --dark-styled-quote-border-color: var(--general-light-text-color);
+    --topbar-hover-text-color: var(--text-color);
+    --topbar-hover-border-color: var(--text-color), 0.5;
+}
+[[/module]]
+>[[/iftags]]
+>[[/ift{$dark-mode}gs]]
+
+>[[ift{$os-title}gs -版式]]
+>[[iftags]]
+[[module css]]
+#page-title {
+    background: linear-gradient(90deg, #304cca, #2596d6 40%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: auto;
+    position: relative;
+}
+#page-title::before {
+    content: " ";
+    position: absolute;
+    background: linear-gradient(90deg, #304cca, #2596d6 40%);
+    background-size: auto;
+    bottom: -0.125rem;
+    width: 100%;
+    height: 0.125rem;
+}
+@media only screen and (min-width: 1024px) {
+    #page-title {
+        background: linear-gradient(90deg, #304cca, #2596d6 33.33%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    #page-title::before {
+        background: linear-gradient(90deg, #304cca, #2596d6 33.33%);
+    }
+}
+[[/module]]
+>[[/iftags]]
+>[[/ift{$os-title}gs]]
